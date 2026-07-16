@@ -36,6 +36,25 @@
         letter-spacing: -0.04em;
       }
 
+      main {
+        text-align: center;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 1.25rem;
+        color: inherit;
+        font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+        line-height: 1.5;
+        text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+        text-underline-offset: 0.25em;
+      }
+
+      a:hover,
+      a:focus-visible {
+        text-decoration-color: currentColor;
+      }
+
       @media (prefers-color-scheme: dark) {
         :root {
           background: #111;
@@ -47,6 +66,7 @@
   <body>
     <main>
       <h1>Hanchong Chen</h1>
+      <a href="mailto:hanchongchen.cs@gmail.com">hanchongchen.cs@gmail.com</a>
     </main>
   </body>
 </html>
